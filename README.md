@@ -14,7 +14,7 @@
 </div>
 <div class="data-structure">
 <h3>Single Linked Lists</h3>
-<img src="https://th.bing.com/th/id/OIP.Erg2IDXkfC5jWnAuFAnDLQHaCq?w=3738&h=1348&rs=1&pid=ImgDetMain" alt="Single Linked Lists" width="400">
+<img src="https://th.bing.com/th/id/OIP.Erg2IDXkfC5jWnAuFAnDLQHaCq?w=3738&h=1348&rs=1&pid=ImgDetMain" alt="Single Linked Lists" width="500">
 <p>A linear data structure where each node only points to the next node.</p>
 </div>
 <div class="data-structure">
