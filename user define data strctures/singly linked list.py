@@ -1,38 +1,63 @@
+
 class Node:
+    """Represents a single node in the linked list."""
+    
     def __init__(self, data):
+        """
+        Initializes a Node with given data.
+
+        Args:
+            data (any): Data to be stored in the node.
+        """
         self.data = data
         self.next = None
 
+
 class LinkedList:
+    """Represents a linked list data structure."""
+    
     def __init__(self):
+        """
+        Initializes an empty linked list.
+        """
         self.head = None
 
-    def insert(self, data):
-        # Create a new node (car) with the given data
-        new_node = Node(data)
 
-        # If the train (linked list) is empty, make the new node the first car
+    def insert(self, data):
+        """
+        Inserts a new node with the given data at the end of the linked list.
+
+        Args:
+            data (any): Data to be stored in the new node.
+        """
+        new_node = Node(data)
+        
         if not self.head:
             self.head = new_node
         else:
-            # Find the last car in the train (linked list)
             current = self.head
             while current.next:
                 current = current.next
-
-            # Attach the new car to the end of the train (linked list)
             current.next = new_node
 
-# Create a linked list (train)
+
+    def print_list(self):
+        """
+        Prints all elements in the linked list.
+        """
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
+
+
+# Create a linked list
 train = LinkedList()
 
-# Insert new cars (nodes) into the train (linked list)
-train.insert('Car A')
-train.insert('Car B')
-train.insert('Car C')
+# Insert new nodes into the linked list
+train.insert('Ferrari Purosangue')
+train.insert('Bently continental GT  ')
+train.insert('  BMW  I8 ')
 
-# Print the train (linked list)
-current = train.head
-while current:
-    print(current.data)
-    current = current.next
+# Print the linked list
+train.print_list()  
